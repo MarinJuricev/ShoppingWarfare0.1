@@ -7,17 +7,17 @@ import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 
 private val DarkColorPalette = darkColors(
-    primary = purple200,
-    primaryVariant = purple700,
-    secondary = teal200
+    primary = purpleDark,
+    primaryVariant = purple,
+    secondary = purpleLight
 )
 
-private val LightColorPalette = lightColors(
-    primary = purple500,
-    primaryVariant = purple700,
-    secondary = teal200,
-    background = white,
-)
+//private val LightColorPalette = lightColors(
+//    primary = purple500,
+//    primaryVariant = purple700,
+//    secondary = teal200,
+//    background = white,
+//)
 
 @Composable
 fun ShoppingWarfareTheme(

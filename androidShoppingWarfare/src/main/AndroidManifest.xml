@@ -3,6 +3,7 @@
     package="com.marinj.shoppingwarfare.android">
 
     <application
+        android:name=".ShoppingWarfareApplication"
         android:allowBackup="false"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">

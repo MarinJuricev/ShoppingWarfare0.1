@@ -35,23 +35,21 @@ android {
 dependencies {
     implementation(project(":shared"))
 
-    implementation(Compose.ui)
-    implementation(Compose.runtime)
-    implementation(Compose.animation)
-    implementation(Compose.uiGraphics)
-    implementation(Compose.foundation)
-    implementation(Compose.uiTooling)
-    implementation(Compose.foundationLayout)
-    implementation(Compose.material)
-    implementation(Compose.compiler)
-    implementation(Compose.navigation)
+    implementation(libs.compose.ui.ui)
+    implementation(libs.compose.runtime)
+    implementation(libs.compose.animation.animation)
+    implementation(libs.compose.foundation.foundation)
+    implementation(libs.compose.material.material)
+    implementation(libs.compose.compiler)
 
-    implementation(Android.material)
-    implementation(Android.appCompat)
+    implementation(libs.androidx.navigation.compose)
 
-    implementation(Koin.android)
-    implementation(Koin.compose)
-    implementation(Koin.core)
+    implementation(libs.material)
+    implementation(libs.androidx.appcompat)
 
-    testImplementation(Koin.test)
+    implementation(libs.koin.android)
+    implementation(libs.koin.compose)
+    implementation(libs.koin.core)
+
+    testImplementation(libs.koin.test)
 }
