@@ -1,5 +1,7 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
+apply(plugin = "org.jmailen.kotlinter")
+
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")

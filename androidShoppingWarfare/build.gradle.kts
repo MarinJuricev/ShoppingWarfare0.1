@@ -1,6 +1,7 @@
+apply(plugin = "org.jmailen.kotlinter")
+
 plugins {
     id("com.android.application")
-    id("org.jmailen.kotlinter") version "3.4.5"
     kotlin("android")
 }
 
