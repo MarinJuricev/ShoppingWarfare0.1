@@ -6,7 +6,6 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import com.marinj.shoppingwarfare.Greeting
 
-
 @Composable
 fun GroceryPage() {
     Scaffold(
