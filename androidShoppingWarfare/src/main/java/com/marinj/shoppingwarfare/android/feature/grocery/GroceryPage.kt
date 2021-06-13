@@ -1,4 +1,4 @@
-package com.marinj.shoppingwarfare.android.feature.shoppinglist
+package com.marinj.shoppingwarfare.android.feature.grocery
 
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
@@ -6,10 +6,9 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import com.marinj.shoppingwarfare.Greeting
 
-const val ShoppingListPageRouteName = "/list"
 
 @Composable
-fun ShoppingListPage() {
+fun GroceryPage() {
     Scaffold(
         topBar = {
             TopAppBar {
