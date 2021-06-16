@@ -27,31 +27,24 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = Versions.jvmTarget
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.0.0-beta08"
+        kotlinCompilerExtensionVersion = Versions.compose
     }
 }
 
 dependencies {
     implementation(project(":shared"))
 
-    implementation(libs.compose.ui.ui)
-    implementation(libs.compose.runtime)
-    implementation(libs.compose.animation.animation)
-    implementation(libs.compose.foundation.foundation)
-    implementation(libs.compose.material.material)
-    implementation(libs.compose.compiler)
+    implementation(Dependencies.composeUi)
+    implementation(Dependencies.composeRuntime)
+    implementation(Dependencies.composeAnimation)
+    implementation(Dependencies.composeFoundation)
+    implementation(Dependencies.composeMaterial)
+    implementation(Dependencies.composeCompiler)
+    implementation(Dependencies.composeNavigation)
 
-    implementation(libs.androidx.navigation.compose)
-
-    implementation(libs.material)
-    implementation(libs.androidx.appcompat)
-
-    implementation(libs.koin.android)
-    implementation(libs.koin.compose)
-    implementation(libs.koin.core)
-
-    testImplementation(libs.koin.test)
+    implementation(Dependencies.material)
+    implementation(Dependencies.appCompat)
 }
