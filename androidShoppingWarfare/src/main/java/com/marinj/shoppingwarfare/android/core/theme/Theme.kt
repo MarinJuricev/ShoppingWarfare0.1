@@ -26,7 +26,7 @@ fun ShoppingWarfareTheme(
     content: @Composable () -> Unit
 ) {
     MaterialTheme(
-        colors =  LightColorPalette,
+        colors = LightColorPalette,
         typography = crossingTypography,
         shapes = shapes,
         content = content
