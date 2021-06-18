@@ -14,6 +14,7 @@ object Versions {
     const val material = "1.3.0"
     const val appCompat = "1.3.0"
     const val kotlin = "1.5.10"
+    const val sqlDelight = "1.5.0"
     const val ktlint = "0.40.0"
     const val hilt = "2.37"
     const val hiltNavigationCompose = "1.0.0-alpha02"
@@ -23,11 +24,17 @@ object Versions {
 object Dependencies {
     const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hilt}"
     const val hiltCompiler = "com.google.dagger:hilt-compiler:${Versions.hilt}"
-    const val hiltNavigationCompose = "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}"
+    const val hiltNavigationCompose =
+        "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}"
     const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
 
     const val koinCore = "io.insert-koin:koin-core:${Versions.koinStable}"
     const val koinTest = "io.insert-koin:koin-test:${Versions.koinStable}"
+
+    const val sqlDelightGradlePlugin = "com.squareup.sqldelight:gradle-plugin:${Versions.sqlDelight}"
+    const val sqlDelightRuntime = "com.squareup.sqldelight:runtime:${Versions.sqlDelight}"
+    const val sqlDelightAndroidDriver = "com.squareup.sqldelight:android-driver:${Versions.sqlDelight}"
+    const val sqlDelightNativeDriver = "com.squareup.sqldelight:native-driver:${Versions.sqlDelight}"
 
     const val composeRuntime = "androidx.compose.runtime:runtime:${Versions.compose}"
     const val composeAnimation = "androidx.compose.animation:animation:${Versions.compose}"

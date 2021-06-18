@@ -6,6 +6,7 @@ plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
+    id("com.squareup.sqldelight")
 }
 
 version = "1.0"
@@ -28,32 +29,44 @@ kotlin {
         frameworkName = "shared"
         podfile = project.file("../iosShoppingWarfare/Podfile")
     }
-    
+
     sourceSets {
-        val commonMain by getting
+        val commonMain by getting {
+            dependencies {
+                implementation(Dependencies.sqlDelightRuntime)
+            }
+        }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test-common"))
                 implementation(kotlin("test-annotations-common"))
             }
         }
-        val androidMain by getting
+        val androidMain by getting {
+            dependencies {
+                implementation(Dependencies.sqlDelightAndroidDriver)
+            }
+        }
         val androidTest by getting {
             dependencies {
                 implementation(kotlin("test-junit"))
                 implementation("junit:junit:4.13.2")
             }
         }
-        val iosMain by getting
+        val iosMain by getting {
+            dependencies {
+                implementation(Dependencies.sqlDelightNativeDriver)
+            }
+        }
         val iosTest by getting
     }
 }
 
 android {
-    compileSdkVersion(30)
+    compileSdk = 30
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
-        minSdkVersion(21)
-        targetSdkVersion(30)
+        minSdk = 21
+        targetSdk = 30
     }
 }
