@@ -9,14 +9,21 @@ import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 import com.marinj.shoppingwarfare.android.R
 import com.marinj.shoppingwarfare.android.feature.grocery.components.GroceryCard
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun GroceryPage() {
+fun GroceryPage(
+    groceryViewModel: GroceryViewModel = hiltViewModel(),
+) {
+    val viewState by groceryViewModel.groceryViewState.collectAsState()
+
     Scaffold(
         topBar = {
             TopAppBar {
