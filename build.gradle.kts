@@ -12,6 +12,7 @@ buildscript {
         classpath("com.android.tools.build:gradle:7.1.0-alpha02")
         classpath("org.jmailen.gradle:kotlinter-gradle:3.4.5")
         // formatKotlin, lintKotlin
+        classpath(Dependencies.hiltGradlePlugin)
     }
 }
 

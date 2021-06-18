@@ -3,6 +3,8 @@ apply(plugin = "org.jmailen.kotlinter")
 plugins {
     id("com.android.application")
     kotlin("android")
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -44,6 +46,10 @@ dependencies {
     implementation(Dependencies.composeMaterial)
     implementation(Dependencies.composeCompiler)
     implementation(Dependencies.composeNavigation)
+
+    implementation(Dependencies.hiltAndroid)
+    implementation(Dependencies.hiltNavigationCompose)
+    kapt(Dependencies.hiltCompiler)
 
     implementation(Dependencies.material)
     implementation(Dependencies.appCompat)

@@ -1,10 +1,7 @@
 package com.marinj.shoppingwarfare.android
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
-class ShoppingWarfareApplication : Application() {
-
-    override fun onCreate() {
-        super.onCreate()
-    }
-}
+@HiltAndroidApp
+class ShoppingWarfareApplication : Application()

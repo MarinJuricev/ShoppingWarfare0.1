@@ -15,15 +15,16 @@ object Versions {
     const val appCompat = "1.3.0"
     const val kotlin = "1.5.10"
     const val ktlint = "0.40.0"
-    const val hilt = "1.0.0"
-    const val hiltNavigationCompose = "1.0.0-alpha03"
+    const val hilt = "2.37"
+    const val hiltNavigationCompose = "1.0.0-alpha02"
     const val jvmTarget = "1.8"
 }
 
 object Dependencies {
     const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hilt}"
     const val hiltCompiler = "com.google.dagger:hilt-compiler:${Versions.hilt}"
-    const val hiltNavigation = "androidx.hilt:hilt-navigation:${Versions.hiltNavigationCompose}"
+    const val hiltNavigationCompose = "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}"
+    const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
 
     const val koinCore = "io.insert-koin:koin-core:${Versions.koinStable}"
     const val koinTest = "io.insert-koin:koin-test:${Versions.koinStable}"
@@ -36,9 +37,9 @@ object Dependencies {
     const val composeFoundation = "androidx.compose.foundation:foundation:${Versions.compose}"
     const val composeCompiler = "androidx.compose.compiler:compiler:${Versions.compose}"
     const val composeActivity = "androidx.activity:activity-compose:${Versions.composeActivity}"
-    const val composeNavigation = "androidx.navigation:navigation-compose:${Versions.composeNavigation}"
+    const val composeNavigation =
+        "androidx.navigation:navigation-compose:${Versions.composeNavigation}"
 
     const val material = "com.google.android.material:material:${Versions.material}"
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
-
 }
