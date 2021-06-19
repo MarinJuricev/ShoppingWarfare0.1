@@ -70,3 +70,8 @@ android {
         targetSdk = 30
     }
 }
+sqldelight {
+    database("ShoppingWarfareDatabase") {
+        packageName = "com.marinj.shoppingwarfare.core.data.datasource"
+    }
+}
