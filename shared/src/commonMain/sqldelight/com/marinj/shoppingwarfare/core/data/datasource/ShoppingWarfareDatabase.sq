@@ -1,7 +1,13 @@
-CREATE TABLE LocalGrocery (
-    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+CREATE TABLE LocalCategory (
+    id INTEGER AS Int NOT NULL PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL
 );
 
 insertItem:
-INSERT OR REPLACE INTO LocalGrocery(id, name)VALUES(?,?);
+INSERT OR REPLACE INTO LocalCategory(id, name)VALUES(?,?);
+
+selectAll:
+SELECT * FROM LocalCategory;
+
+deleteCategoryById:
+DELETE FROM LocalCategory WHERE id = ?;

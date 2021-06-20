@@ -35,6 +35,7 @@ object Dependencies {
     const val sqlDelightRuntime = "com.squareup.sqldelight:runtime:${Versions.sqlDelight}"
     const val sqlDelightAndroidDriver = "com.squareup.sqldelight:android-driver:${Versions.sqlDelight}"
     const val sqlDelightNativeDriver = "com.squareup.sqldelight:native-driver:${Versions.sqlDelight}"
+    const val sqlDelightCoroutinesExtension = "com.squareup.sqldelight:coroutines-extensions:${Versions.sqlDelight}"
 
     const val composeRuntime = "androidx.compose.runtime:runtime:${Versions.compose}"
     const val composeAnimation = "androidx.compose.animation:animation:${Versions.compose}"

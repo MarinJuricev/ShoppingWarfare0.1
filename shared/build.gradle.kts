@@ -35,6 +35,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(Dependencies.sqlDelightRuntime)
+                implementation(Dependencies.sqlDelightCoroutinesExtension)
             }
         }
         val commonTest by getting {
