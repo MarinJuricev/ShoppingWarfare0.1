@@ -1,7 +1,8 @@
-package com.marinj.shoppingwarfare.android
+package com.marinj.shoppingwarfare.android.core.components
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
+import com.marinj.shoppingwarfare.android.R
 
 sealed class BottomNavigationItem(
     val route: String,

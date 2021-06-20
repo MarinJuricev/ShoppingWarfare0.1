@@ -17,7 +17,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.marinj.shoppingwarfare.android.BottomNavigationItem
 import com.marinj.shoppingwarfare.android.feature.cart.CartPage
 import com.marinj.shoppingwarfare.android.feature.grocery.GroceryPage
 import com.marinj.shoppingwarfare.android.feature.history.HistoryPage

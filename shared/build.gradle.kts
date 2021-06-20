@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 apply(plugin = "org.jmailen.kotlinter")
 
@@ -70,8 +71,16 @@ android {
         targetSdk = 30
     }
 }
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
 sqldelight {
     database("ShoppingWarfareDatabase") {
         packageName = "com.marinj.shoppingwarfare.core.data.datasource"
+        sourceFolders = listOf("sqldelight")
     }
 }

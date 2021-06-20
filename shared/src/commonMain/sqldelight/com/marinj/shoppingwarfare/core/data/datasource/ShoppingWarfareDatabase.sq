@@ -1,0 +1,7 @@
+CREATE TABLE LocalGrocery (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL
+);
+
+insertItem:
+INSERT OR REPLACE INTO LocalGrocery(id, name)VALUES(?,?);
