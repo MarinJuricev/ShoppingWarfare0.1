@@ -1,8 +1,8 @@
-package com.marinj.shoppingwarfare.android.feature.grocery
+package com.marinj.shoppingwarfare.android.feature.category
 
 import androidx.lifecycle.viewModelScope
 import com.marinj.shoppingwarfare.android.core.base.BaseViewModel
-import com.marinj.shoppingwarfare.android.feature.grocery.GroceryEvent.GetGroceries
+import com.marinj.shoppingwarfare.android.feature.category.CategoryEvent.GetGroceries
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -10,12 +10,12 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class GroceryViewModel @Inject constructor() : BaseViewModel<GroceryEvent>() {
+class CategoryViewModel @Inject constructor() : BaseViewModel<CategoryEvent>() {
 
-    private val _groceryViewState = MutableStateFlow(GroceryViewState())
-    val groceryViewState: StateFlow<GroceryViewState> = _groceryViewState
+    private val _groceryViewState = MutableStateFlow(CategoryViewState())
+    val categoryViewState: StateFlow<CategoryViewState> = _groceryViewState
 
-    override fun onEvent(event: GroceryEvent) {
+    override fun onEvent(event: CategoryEvent) {
         when (event) {
             GetGroceries -> handleGetGroceries()
         }

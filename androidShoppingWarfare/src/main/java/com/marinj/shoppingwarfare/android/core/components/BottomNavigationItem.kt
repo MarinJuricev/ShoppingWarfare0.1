@@ -9,14 +9,14 @@ sealed class BottomNavigationItem(
     @StringRes val resourceId: Int,
     @DrawableRes val iconId: Int,
 ) {
-    object Grocery : BottomNavigationItem("grocery", R.string.grocery, R.drawable.grocery_icon)
+    object Category : BottomNavigationItem("category", R.string.category, R.drawable.category_icon)
     object Cart : BottomNavigationItem("cart", R.string.cart, R.drawable.cart_icon)
     object History : BottomNavigationItem("history", R.string.history, R.drawable.history_icon)
     object User : BottomNavigationItem("user", R.string.user, R.drawable.user_icon)
 
     companion object {
         val navigationItems = listOf(
-            Grocery,
+            Category,
             Cart,
             History,
             User,

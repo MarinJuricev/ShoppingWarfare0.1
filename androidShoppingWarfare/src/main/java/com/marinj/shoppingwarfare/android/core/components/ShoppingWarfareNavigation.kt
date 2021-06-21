@@ -18,7 +18,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.marinj.shoppingwarfare.android.feature.cart.CartPage
-import com.marinj.shoppingwarfare.android.feature.grocery.GroceryPage
+import com.marinj.shoppingwarfare.android.feature.category.GroceryPage
 import com.marinj.shoppingwarfare.android.feature.history.HistoryPage
 import com.marinj.shoppingwarfare.android.feature.user.UserPage
 
@@ -65,10 +65,10 @@ fun ShoppingWarfareNavigation() {
     ) { innerPadding ->
         NavHost(
             navController = navController,
-            startDestination = BottomNavigationItem.Grocery.route,
+            startDestination = BottomNavigationItem.Category.route,
             Modifier.padding(innerPadding)
         ) {
-            composable(BottomNavigationItem.Grocery.route) { GroceryPage() }
+            composable(BottomNavigationItem.Category.route) { GroceryPage() }
             composable(BottomNavigationItem.Cart.route) { CartPage() }
             composable(BottomNavigationItem.History.route) { HistoryPage() }
             composable(BottomNavigationItem.User.route) { UserPage() }

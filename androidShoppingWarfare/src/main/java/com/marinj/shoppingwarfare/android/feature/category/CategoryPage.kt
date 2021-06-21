@@ -1,4 +1,4 @@
-package com.marinj.shoppingwarfare.android.feature.grocery
+package com.marinj.shoppingwarfare.android.feature.category
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.height
@@ -15,14 +15,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.marinj.shoppingwarfare.android.R
-import com.marinj.shoppingwarfare.android.feature.grocery.components.GroceryCard
+import com.marinj.shoppingwarfare.android.feature.category.components.GroceryCard
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun GroceryPage(
-    groceryViewModel: GroceryViewModel = hiltViewModel(),
+    categoryViewModel: CategoryViewModel = hiltViewModel(),
 ) {
-    val viewState by groceryViewModel.groceryViewState.collectAsState()
+    val viewState by categoryViewModel.categoryViewState.collectAsState()
 
     Scaffold(
         topBar = {
@@ -38,7 +38,7 @@ fun GroceryPage(
                         .padding(16.dp)
                         .height(200.dp),
                     text = "Some",
-                    imageId = R.drawable.grocery_icon,
+                    imageId = R.drawable.category_icon,
                 )
             }
         }

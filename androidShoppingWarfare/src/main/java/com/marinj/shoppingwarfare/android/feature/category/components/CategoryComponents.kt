@@ -1,4 +1,4 @@
-package com.marinj.shoppingwarfare.android.feature.grocery.components
+package com.marinj.shoppingwarfare.android.feature.category.components
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.Arrangement

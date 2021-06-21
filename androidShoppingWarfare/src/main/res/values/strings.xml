@@ -4,4 +4,5 @@
     <string name="cart">Cart</string>
     <string name="history">History</string>
     <string name="user">User</string>
+    <string name="category">Category</string>
 </resources>
