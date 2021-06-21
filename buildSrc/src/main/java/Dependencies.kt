@@ -29,6 +29,7 @@ object Dependencies {
     const val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}"
 
     const val koinCore = "io.insert-koin:koin-core:${Versions.koinStable}"
+    const val koinAndroid = "io.insert-koin:koin-android:${Versions.koinStable}"
     const val koinTest = "io.insert-koin:koin-test:${Versions.koinStable}"
 
     const val sqlDelightGradlePlugin = "com.squareup.sqldelight:gradle-plugin:${Versions.sqlDelight}"

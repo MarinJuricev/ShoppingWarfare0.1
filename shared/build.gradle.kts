@@ -36,6 +36,8 @@ kotlin {
             dependencies {
                 implementation(Dependencies.sqlDelightRuntime)
                 implementation(Dependencies.sqlDelightCoroutinesExtension)
+
+                api(Dependencies.koinCore)
             }
         }
         val commonTest by getting {
@@ -47,6 +49,9 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation(Dependencies.sqlDelightAndroidDriver)
+
+                api(Dependencies.koinAndroid)
+
             }
         }
         val androidTest by getting {
