@@ -2,7 +2,7 @@ package com.marinj.shoppingwarfare.android.feature.category
 
 import androidx.lifecycle.viewModelScope
 import com.marinj.shoppingwarfare.android.core.base.BaseViewModel
-import com.marinj.shoppingwarfare.android.feature.category.CategoryEvent.GetGroceries
+import com.marinj.shoppingwarfare.android.feature.category.CategoryEvent.GetCategories
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -17,7 +17,7 @@ class CategoryViewModel @Inject constructor() : BaseViewModel<CategoryEvent>() {
 
     override fun onEvent(event: CategoryEvent) {
         when (event) {
-            GetGroceries -> handleGetGroceries()
+            GetCategories -> handleGetGroceries()
         }
     }
 
