@@ -10,6 +10,7 @@ object Versions {
     const val composeActivity = "1.3.0-beta01"
     const val composeNavigation = "2.4.0-alpha03"
     const val coroutines = "1.5.0"
+    const val coroutinesTest = "1.5.0"
     const val koinStable = "3.0.2"
     const val material = "1.3.0"
     const val appCompat = "1.3.0"
@@ -18,6 +19,8 @@ object Versions {
     const val ktlint = "0.40.0"
     const val hilt = "2.37"
     const val hiltNavigationCompose = "1.0.0-alpha02"
+    const val turbine = "0.5.2"
+    const val mockk = "1.11.0"
     const val jvmTarget = "1.8"
 }
 
@@ -32,11 +35,15 @@ object Dependencies {
     const val koinAndroid = "io.insert-koin:koin-android:${Versions.koinStable}"
     const val koinTest = "io.insert-koin:koin-test:${Versions.koinStable}"
 
-    const val sqlDelightGradlePlugin = "com.squareup.sqldelight:gradle-plugin:${Versions.sqlDelight}"
+    const val sqlDelightGradlePlugin =
+        "com.squareup.sqldelight:gradle-plugin:${Versions.sqlDelight}"
     const val sqlDelightRuntime = "com.squareup.sqldelight:runtime:${Versions.sqlDelight}"
-    const val sqlDelightAndroidDriver = "com.squareup.sqldelight:android-driver:${Versions.sqlDelight}"
-    const val sqlDelightNativeDriver = "com.squareup.sqldelight:native-driver:${Versions.sqlDelight}"
-    const val sqlDelightCoroutinesExtension = "com.squareup.sqldelight:coroutines-extensions:${Versions.sqlDelight}"
+    const val sqlDelightAndroidDriver =
+        "com.squareup.sqldelight:android-driver:${Versions.sqlDelight}"
+    const val sqlDelightNativeDriver =
+        "com.squareup.sqldelight:native-driver:${Versions.sqlDelight}"
+    const val sqlDelightCoroutinesExtension =
+        "com.squareup.sqldelight:coroutines-extensions:${Versions.sqlDelight}"
 
     const val composeRuntime = "androidx.compose.runtime:runtime:${Versions.compose}"
     const val composeAnimation = "androidx.compose.animation:animation:${Versions.compose}"
@@ -51,4 +58,11 @@ object Dependencies {
 
     const val material = "com.google.android.material:material:${Versions.material}"
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
+
+    const val turbine = "app.cash.turbine:turbine:${Versions.turbine}"
+
+    const val coroutinesTest =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutinesTest}"
+
+    const val mockk = "io.mockk:mockk:${Versions.mockk}"
 }

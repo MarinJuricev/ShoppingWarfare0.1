@@ -44,6 +44,8 @@ kotlin {
             dependencies {
                 implementation(kotlin("test-common"))
                 implementation(kotlin("test-annotations-common"))
+
+                implementation(Dependencies.turbine)
             }
         }
         val androidMain by getting {
@@ -58,6 +60,10 @@ kotlin {
             dependencies {
                 implementation(kotlin("test-junit"))
                 implementation("junit:junit:4.13.2")
+
+                //TODO: There isn't any available mocking library for KMM, for now write all the unit tests in the Android
+                implementation(Dependencies.mockk)
+                implementation(Dependencies.coroutinesTest)
             }
         }
         val iosMain by getting {
